@@ -1,14 +1,20 @@
-import { forwardRef } from "react";
+import { forwardRef } from 'react';
 
 interface Props extends React.ComponentPropsWithoutRef<'button'> {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
-const Button = forwardRef<HTMLButtonElement, Props>(({ children, ...rest }, ref) => (
-  <button className="bg-teal-600 text-gray-200 px-3 py-1 shadow-sm font-semibold rounded-sm" {...rest} ref={ref}>
-    {children}
-  </button>
-))
-Button.displayName = 'Button'
+const Button = forwardRef<HTMLButtonElement, Props>(
+  ({ children, ...rest }, ref) => (
+    <button
+      className="px-3 py-1 font-semibold text-gray-200 bg-teal-600 rounded-sm shadow-sm"
+      {...rest}
+      ref={ref}
+    >
+      {children}
+    </button>
+  ),
+);
+Button.displayName = 'Button';
 
-export default Button
+export default Button;

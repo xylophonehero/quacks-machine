@@ -7,9 +7,9 @@ export interface Typegen0 {
   };
   invokeSrcNameMap: {};
   missingImplementations: {
-    actions: 'drawChip';
+    actions: never;
     services: never;
-    guards: 'hasChoice';
+    guards: never;
     delays: never;
   };
   eventsCausingActions: {

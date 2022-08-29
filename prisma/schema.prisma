@@ -31,8 +31,8 @@ model Post {
 
 model Machine {
   id    String @id @default(cuid())
-  // machine String @default("")
   state String @default("")
+  seed  String
 }
 
 // Game schema

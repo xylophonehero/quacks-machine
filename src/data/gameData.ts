@@ -1,4 +1,4 @@
-import { Player, Prisma } from '@prisma/client';
+import { Player } from 'machines/gameMachine';
 import { z } from 'zod';
 
 const gamePhases = z.object({
@@ -20,6 +20,8 @@ const boardSpace = z.object({
   value: z.number(),
   ruby: z.boolean(),
 });
+export type BoardSpace = z.infer<typeof boardSpace>;
+
 const boardSchema = z.array(boardSpace);
 
 export const board: z.infer<typeof boardSchema> = [
@@ -177,8 +179,14 @@ export const initialChips = [
   'g1',
   'o1',
 ];
-export const defaultPlayer: Partial<Player> = {
+
+export const defaultPlayer: Player = {
   chipsInBag: ['w1', 'w1', 'w1', 'w1', 'w2', 'w2', 'w3', 'g1', 'o1'],
   chipsOnBoard: [],
   name: 'Nick',
+  dropletValue: 0,
+  id: 'a',
+  points: 0,
+  ratValue: 0,
+  rubies: 0,
 };

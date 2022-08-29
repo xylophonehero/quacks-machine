@@ -57,6 +57,7 @@ const machineRouter = createRouter()
           id,
           state: JSON.stringify(trafficLightMachine.initialState),
           // machine: JSON.stringify(trafficLightMachine),
+          seed: '',
         },
         select: {
           id: true,

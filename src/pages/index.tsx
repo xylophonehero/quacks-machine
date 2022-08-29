@@ -3,11 +3,11 @@ import { trpc } from '../utils/trpc';
 
 export default function IndexPage() {
   const router = useRouter();
-  const createCounter = trpc.useMutation('machine.create', {
+  const createGame = trpc.useMutation('game.create', {
     onSuccess: ({ id }) => {
-      router.push(`/${id}`);
+      router.push(`/game/${id}`);
     },
   });
 
-  return <button onClick={() => createCounter.mutate({})}>Test</button>;
+  return <button onClick={() => createGame.mutate({})}>Test</button>;
 }

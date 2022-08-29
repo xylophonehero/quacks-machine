@@ -10,6 +10,7 @@ specifiers:
   '@types/node': ^17.0.10
   '@types/node-fetch': ^2.5.11
   '@types/react': ^18.0.9
+  '@types/seedrandom': ^3.0.2
   '@types/ws': ^8.2.0
   '@typescript-eslint/eslint-plugin': ^4.30.0
   '@typescript-eslint/parser': ^5.14.0
@@ -38,6 +39,7 @@ specifiers:
   react: ^18.1.0
   react-dom: ^18.1.0
   react-query: ^3.39.2
+  seedrandom: ^3.0.5
   start-server-and-test: ^1.12.0
   superjson: ^1.7.4
   tailwindcss: ^3.0.23
@@ -62,6 +64,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
+  seedrandom: 3.0.5
   start-server-and-test: 1.14.0
   superjson: 1.9.1
   ts-node: 10.9.1_jjhi7r4pwohoxdq63hifu4bixu
@@ -76,6 +79,7 @@ devDependencies:
   '@types/node': 17.0.45
   '@types/node-fetch': 2.6.2
   '@types/react': 18.0.17
+  '@types/seedrandom': 3.0.2
   '@types/ws': 8.5.3
   '@typescript-eslint/eslint-plugin': 4.33.0_tqjcnxeq2z7jloypwpz73ssn7u
   '@typescript-eslint/parser': 5.35.1_wnilx7boviscikmvsfkd6ljepe
@@ -1115,6 +1119,10 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+
+  /@types/seedrandom/3.0.2:
+    resolution: {integrity: sha512-YPLqEOo0/X8JU3rdiq+RgUKtQhQtrppE766y7vMTu8dGML7TVtZNiiiaC/hhU9Zqw9UYopXxhuWWENclMVBwKQ==}
+    dev: true
 
   /@types/stack-utils/2.0.1:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
@@ -5067,6 +5075,10 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /seedrandom/3.0.5:
+    resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
     dev: false
 
   /semver/5.7.1:

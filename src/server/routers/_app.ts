@@ -7,6 +7,7 @@ import superjson from 'superjson';
 import { clearInterval } from 'timers';
 import { counterRouter } from './counter';
 import machineRouter from './machine';
+import gameRouter from './game';
 
 /**
  * Create your application's root router
@@ -31,7 +32,8 @@ export const appRouter = createRouter()
     },
   })
   .merge('counter.', counterRouter)
-  .merge('machine.', machineRouter);
+  .merge('machine.', machineRouter)
+  .merge('game.', gameRouter);
 // .subscription('randomNumber', {
 //   resolve() {
 //     return new Subscription<number>((emit) => {
