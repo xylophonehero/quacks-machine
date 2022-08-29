@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light[data-state="red"] {
+  @apply bg-red-600
+}
+
+.light[data-state="yellow"] {
+  @apply bg-yellow-600
+}
+
+.light[data-state="green"] {
+  @apply bg-green-600
+}
+
+.light[data-state="purple"] {
+  @apply bg-purple-600
+}
